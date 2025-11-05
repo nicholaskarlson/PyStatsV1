@@ -15,4 +15,8 @@ python -m pip install -U pip
 pip install -r requirements.txt
 
 # Example
+
+## License
+MIT © 2025 Nicholas Elliott Karlson
+
 python scripts/ch01_introduction.py

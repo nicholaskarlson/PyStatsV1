@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 """
 Chapter 7 — Simple Linear Regression (R mirror)
 - Embedded 'cars' dataset (speed, dist)
