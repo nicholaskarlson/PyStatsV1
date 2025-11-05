@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 """
 Chapter 8 — Inference for Simple Linear Regression (R mirror, manual formulas)
 - Uses the same embedded 'cars' dataset (speed, dist)

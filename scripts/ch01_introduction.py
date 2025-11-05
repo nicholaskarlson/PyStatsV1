@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 """
 Chapter 1 — Introduction (Python mirror of R ch1_introduction.R)
 Demonstrates simple arithmetic and printing, matching the R-console style.

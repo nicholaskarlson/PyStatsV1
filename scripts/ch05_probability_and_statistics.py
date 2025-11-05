@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 """
 Chapter 5 — Probability & Statistics (R mirror)
 - Normal pdf/cdf/quantiles
