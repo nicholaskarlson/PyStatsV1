@@ -1,3 +1,4 @@
+import argparse
 # SPDX-License-Identifier: MIT
 """
 Simulate trial-level Stroop data (plausible undergrad study).
@@ -137,3 +138,19 @@ def write_meta(subjects: pd.DataFrame, trials: pd.DataFrame):
 if __name__ == "__main__":
     subjects_df, trials_df = simulate()
     write_meta(subjects_df, trials_df)
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--seed", type=int, default=42)
+    ap.add_argument("--n-subjects", type=int, default=60)
+    ap.add_argument("--n-trials", type=int, default=100)
+    args = ap.parse_args()
+    global N_SUBJ, N_TRIALS_PER_COND, rng
+    N_SUBJ = args.n_subjects
+    N_TRIALS_PER_COND = args.n_trials
+    rng = np.random.default_rng(args.seed)
+    simulate()
+
+if __name__ == "__main__":
+    main()
