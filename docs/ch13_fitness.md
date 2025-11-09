@@ -1,8 +1,9 @@
 # Fitness 2×2 Mixed Example (Chapter 13)
 
-**Data**: `data/synthetic/fitness_subjects.csv`, `data/synthetic/fitness_long.csv`, and `data/synthetic/fitness_meta.json`
+**Data**: `data/synthetic/fitness_subjects.csv`, `data/synthetic/fitness_long.csv`  
+*(metadata JSON is generated and ignored by git)*
 
-**Run**
+## Run
 ```bash
 python scripts/sim_fitness_2x2.py
 python scripts/ch13_fitness_mixed.py --save-plots
