@@ -1,5 +1,9 @@
 # PyStatsV1 Docs
 
+![CI](https://github.com/nicholaskarlson/PyStatsV1/actions/workflows/ci.yml/badge.svg)
+![Tag](https://img.shields.io/github/v/tag/nicholaskarlson/PyStatsV1?label=release)
+
+
 - Chapter 12 — Diagnostics  
   - `scripts/ch12_diagnostics.py`
 - Chapter 13 — Within-Subject Stroop  

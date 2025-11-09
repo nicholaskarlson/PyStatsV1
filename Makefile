@@ -1,3 +1,9 @@
+.PHONY: help
+help:
+	@echo "Available targets:"
+	@echo "  ch13      - full Chapter 13 run (plots saved)"
+	@echo "  ch13-ci   - tiny smoke (fast) for CI"
+
 .PHONY: ch13-ci
 ch13-ci:
 	python scripts/sim_stroop.py --n-subjects 6 --n-trials 10
