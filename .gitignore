@@ -20,3 +20,9 @@ outputs/*.pdf
 
 # generated metadata (timestamps change on each run)
 data/synthetic/*_meta.json
+
+# generated CSVs
+data/synthetic/psych_stroop_*.csv
+data/synthetic/fitness_*.csv
+# generated plots
+outputs/
