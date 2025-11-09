@@ -150,7 +150,5 @@ def main():
     N_SUBJ = args.n_subjects
     N_TRIALS_PER_COND = args.n_trials
     rng = np.random.default_rng(args.seed)
-    simulate()
-
 if __name__ == "__main__":
     main()
