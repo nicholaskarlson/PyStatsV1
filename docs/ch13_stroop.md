@@ -17,3 +17,5 @@ python scripts/ch13_stroop_within.py --save-plots
 
 Outputs in `outputs/`: subject-means spaghetti & trial-level violins.
 
+
+**Reproducibility**: generation params live in `data/synthetic/psych_stroop_meta.json`.
