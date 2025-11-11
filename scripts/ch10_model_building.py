@@ -7,7 +7,9 @@ Chapter 10 — Model Building (R → Python)
 Usage:
   python scripts/ch10_model_building.py --criterion aic --cvk 5 --save-plot
 """
-import argparse, os, math, itertools, re
+import argparse
+import os
+import math
 import numpy as np
 import pandas as pd
 import statsmodels.formula.api as smf

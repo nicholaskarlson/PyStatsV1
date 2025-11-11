@@ -7,7 +7,9 @@ Chapter 9 — Multiple Linear Regression (auto-mpg)
 - Prints SPSS-style tables; saves residual plot + QQ plot + text summary
 - Headless: works from the command line
 """
-import argparse, os, sys
+import argparse
+import os
+import sys
 import numpy as np
 import pandas as pd
 import matplotlib

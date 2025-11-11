@@ -6,7 +6,8 @@ Examples:
   python scripts/ch12_diagnostics.py --save-plots
   python scripts/ch12_diagnostics.py --formula "mpg ~ weight + model_year + C(cylinders) + horsepower" --save-plots --top-n 10
 """
-import argparse, os, math
+import argparse
+import os
 import numpy as np
 import pandas as pd
 import statsmodels.formula.api as smf

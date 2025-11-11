@@ -7,7 +7,9 @@ Examples:
   python scripts/ch11_categorical_interactions.py --contrasts cylinders=sum,origin=treatment --interaction weight:cylinders --save-plots
   python scripts/ch11_categorical_interactions.py --interaction model_year:origin --save-plots
 """
-import argparse, os, math, itertools
+import argparse
+import os
+import math
 import numpy as np
 import pandas as pd
 import statsmodels.formula.api as smf
