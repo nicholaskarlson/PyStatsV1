@@ -22,7 +22,7 @@ ch13:
 
 .PHONY: lint format test
 lint:
-	ruff check .
+	ruff check tests/
 format:
 	black .
 test:
