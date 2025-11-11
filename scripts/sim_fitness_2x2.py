@@ -6,8 +6,16 @@ import numpy as np, pandas as pd
 rng = np.random.default_rng()
 N = 80
 GROUPS = ["ProgramA","ProgramB"]
+DEFAULT_SEED = 7
 
-def simulate():
+def simulate(n_per_group=None, seed=DEFAULT_SEED):
+    global rng, N
+    # Allow overriding globals via args, primarily for testing
+    if n_per_group is not None:
+        N = n_per_group * len(GROUPS) # Adjust N based on n_per_group
+    
+    rng = np.random.default_rng(seed)
+
     os.makedirs("data/synthetic", exist_ok=True)
     subjects = pd.DataFrame({
         "id": np.arange(1, N+1),
@@ -39,7 +47,7 @@ def simulate():
     long.to_csv("data/synthetic/fitness_long.csv", index=False)
 
     meta = dict(
-        seed=int(getattr(rng, "seed_seq", np.random.SeedSequence()).entropy) if hasattr(rng, "seed_seq") else None,
+        seed=seed,
         n=int(N),
         design="2x2 mixed (Group between × Time within)",
         programs=GROUPS,
@@ -50,15 +58,17 @@ def simulate():
         json.dump(meta, f, indent=2)
 
     print("Wrote fitness_subjects.csv, fitness_long.csv, fitness_meta.json")
+    # Return for testing convenience
+    return subjects, long
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--seed", type=int, default=7, help="RNG seed")
-    ap.add_argument("--n-per-group", type=int, default=5, help="(kept for CLI parity; not used here)")
+    ap.add_argument("--seed", type=int, default=DEFAULT_SEED, help="RNG seed")
+    ap.add_argument("--n-per-group", type=int, default=40, help="Number of subjects per group")
     args = ap.parse_args()
-    global rng
-    rng = np.random.default_rng(args.seed)
-    simulate()
+    
+    # Pass CLI args to simulate
+    simulate(n_per_group=args.n_per_group, seed=args.seed)
 
 if __name__ == "__main__":
     main()
