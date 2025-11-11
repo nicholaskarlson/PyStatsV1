@@ -22,9 +22,9 @@ help:
 .PHONY: ch13-ci
 ch13-ci:
 	$(PYTHON) -m scripts.sim_stroop --n-subjects 6 --n-trials 10 --seed $(SEED) --outdir $(OUT_SYN)
-	$(PYTHON) -m scripts.ch13_stroop_within --datadir $(OUT_SYN) --outdir $(OUT_CH13) --save-plots --seed $(SEED)
+	$(PYTHON) -m scripts.ch13_stroop_within --data $(OUT_SYN)/psych_stroop_trials.csv --outdir $(OUT_CH13) --save-plots --seed $(SEED)
 	$(PYTHON) -m scripts.sim_fitness_2x2 --n-per-group 10 --seed $(SEED) --outdir $(OUT_SYN)
-	$(PYTHON) -m scripts.ch13_fitness_mixed --datadir $(OUT_SYN) --outdir $(OUT_CH13) --save-plots --seed $(SEED)
+	$(PYTHON) -m scripts.ch13_fitness_mixed --data $(OUT_SYN)/fitness_long.csv --outdir $(OUT_CH13) --save-plots --seed $(SEED)
 
 .PHONY: ch14-ci
 ch14-ci:
@@ -35,9 +35,9 @@ ch14-ci:
 .PHONY: ch13
 ch13:
 	$(PYTHON) -m scripts.sim_stroop --seed $(SEED) --outdir $(OUT_SYN)
-	$(PYTHON) -m scripts.ch13_stroop_within --datadir $(OUT_SYN) --outdir $(OUT_CH13) --save-plots --seed $(SEED)
+	$(PYTHON) -m scripts.ch13_stroop_within --data $(OUT_SYN)/psych_stroop_trials.csv --outdir $(OUT_CH13) --save-plots --seed $(SEED)
 	$(PYTHON) -m scripts.sim_fitness_2x2 --seed $(SEED) --outdir $(OUT_SYN)
-	$(PYTHON) -m scripts.ch13_fitness_mixed --datadir $(OUT_SYN) --outdir $(OUT_CH13) --save-plots --seed $(SEED)
+	$(PYTHON) -m scripts.ch13_fitness_mixed --data $(OUT_SYN)/fitness_long.csv --outdir $(OUT_CH13) --save-plots --seed $(SEED)
 
 .PHONY: ch14
 ch14:
