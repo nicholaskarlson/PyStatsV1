@@ -96,8 +96,8 @@ def main() -> None:
     with open(meta_path, "w", encoding="utf-8") as f:
         json.dump(meta, f, indent=2)
 
-    print(f"Generated {df.shape[0]} rows → {data_path}")
-    print(f"Wrote meta → {meta_path}")
+    print(f"Generated {df.shape[0]} rows -> {data_path}")
+    print(f"Wrote meta -> {meta_path}")
 
 
 if __name__ == "__main__":
