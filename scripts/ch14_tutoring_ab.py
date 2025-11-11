@@ -91,7 +91,7 @@ def main() -> None:
     summary_path = args.outdir / "ch14_tutoring_summary.json"
     with open(summary_path, "w", encoding="utf-8") as f:
         json.dump(summary, f, indent=2)
-    print(f"Wrote summary → {summary_path}")
+    print(f"Wrote summary -> {summary_path}")
 
     # Plot
     fig, ax = plt.subplots(figsize=(6, 5))
@@ -102,7 +102,7 @@ def main() -> None:
     plot_path = args.outdir / "ch14_tutoring_boxplot.png"
     fig.tight_layout()
     fig.savefig(plot_path, dpi=150)
-    print(f"Wrote plot → {plot_path}")
+    print(f"Wrote plot -> {plot_path}")
 
 
 if __name__ == "__main__":

@@ -98,7 +98,7 @@ def main() -> None:
     print("\n=== Paired t-test on subject means (log RT) ===")
     print(f"t = {tstat:.3f}, p = {pval:.3g}, Cohen's dz = {dz:.3f}")
     delta_ms = np.exp(wide["incongruent"].mean()) - np.exp(wide["congruent"].mean())
-    print(f"Back-translated mean RT difference ≈ {delta_ms:.1f} ms (incongruent - congruent)")
+    print(f"Back-translated mean RT difference ~= {delta_ms:.1f} ms (incongruent - congruent)")
 
     # Mixed model on trial-level log RT
     # random intercepts for subjects; (you can extend to random slopes)

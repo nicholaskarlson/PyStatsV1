@@ -9,7 +9,6 @@ Generates a CSV file with student scores from two independent groups.
 from __future__ import annotations
 
 import json
-import pathlib
 from typing import Any
 
 import numpy as np
@@ -97,8 +96,8 @@ def main() -> None:
     with open(meta_path, "w", encoding="utf-8") as f:
         json.dump(meta, f, indent=2)
 
-    print(f"Generated {df.shape[0]} rows → {data_path}")
-    print(f"Wrote meta → {meta_path}")
+    print(f"Generated {df.shape[0]} rows -> {data_path}")
+    print(f"Wrote meta -> {meta_path}")
 
 
 if __name__ == "__main__":
