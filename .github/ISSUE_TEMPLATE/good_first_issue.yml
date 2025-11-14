@@ -1,0 +1,52 @@
+name: 📘 Good first issue
+description: Beginner-friendly, self-contained task for new contributors
+labels:
+  - good first issue
+  - help wanted
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest in contributing to PyStatsV1! 🎓
+
+        This template is for small, self-contained tasks suitable for new contributors.
+        Please make sure that the issue includes enough detail for someone to complete it
+        by following `CONTRIBUTING.md`.
+
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: Short description of the task.
+      placeholder: "Add --explain flag to ch14_tutoring_ab analyzer"
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Describe exactly what needs to be done (files, functions, tests).
+      placeholder: |
+        - Update `scripts/ch14_tutoring_ab.py` to accept a `--explain` flag.
+        - When `--explain` is set, print a short textual explanation of the t-test,
+          assumptions, and effect size interpretation.
+        - Ensure `make lint` and `make test` still pass.
+
+  - type: textarea
+    id: files
+    attributes:
+      label: Files to Touch
+      description: List expected files to change (so newcomers can find them easily).
+      placeholder: |
+        - scripts/ch14_tutoring_ab.py
+        - tests/test_cli_smoke.py (if we add a new CLI case)
+        - docs or README snippets if needed
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Contributor Checklist
+      options:
+        - label: I have read `CONTRIBUTING.md`.
+        - label: I can run `make lint` locally.
+        - label: I can run `make test` locally.
+        - label: I have checked for existing issues/PRs that might overlap.
