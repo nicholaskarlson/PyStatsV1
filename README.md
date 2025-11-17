@@ -2,6 +2,7 @@
 
 [![ci](https://img.shields.io/github/actions/workflow/status/PyStatsV1/PyStatsV1/ci.yml?branch=main)](https://github.com/PyStatsV1/PyStatsV1/actions/workflows/ci.yml)
 [![release](https://img.shields.io/github/v/tag/PyStatsV1/PyStatsV1?label=release)](https://github.com/PyStatsV1/PyStatsV1/tags)
+[![Documentation Status](https://readthedocs.org/projects/pystatsv1/badge/?version=latest)](https://pystatsv1.readthedocs.io/en/latest/?badge=latest)
 
 PyStatsV1 provides **plain, transparent Python scripts** that mirror classical **R textbook analyses**, making it easy for students, tutors, and practitioners to:
 
