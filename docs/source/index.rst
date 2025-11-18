@@ -20,6 +20,8 @@ Welcome to the documentation for **PyStatsV1** – chapter-based applied statist
    applied_stats_with_python_ch10_model_building
    applied_stats_with_python_ch11_categorical_predictors_and_interactions
    applied_stats_with_python_ch12_analysis_of_variance.rst
+   applied_stats_with_python_ch13_model_diagnostics
+   
    chapters
    teaching_guide
    contributing
