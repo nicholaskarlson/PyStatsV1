@@ -5,7 +5,7 @@ Welcome to the documentation for **PyStatsV1** – chapter-based applied statist
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Track A – Applied Statistics with Python (Regression)
 
    getting_started
    applied_stats_with_python_intro
@@ -30,3 +30,11 @@ Welcome to the documentation for **PyStatsV1** – chapter-based applied statist
    chapters
    teaching_guide
    contributing
+
+.. _psych-track:
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Track B – Psychological Science & Statistics (Psych track)
+
+   psych_intro
