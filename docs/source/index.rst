@@ -38,3 +38,4 @@ Welcome to the documentation for **PyStatsV1** – chapter-based applied statist
    :caption: Track B – Psychological Science & Statistics (Psych track)
 
    psych_intro
+   psych_ch1_thinking_like_a_scientist
