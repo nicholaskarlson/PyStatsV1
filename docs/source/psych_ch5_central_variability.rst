@@ -234,6 +234,12 @@ In this lab we return to the **sleep study** dataset. We will:
 * compute range, IQR, and standard deviation,
 * compare summaries across study methods.
 
+
+If you ever need to regenerate the underlying CSV file for this dataset,
+see the instructor note in :ref:`psych_ch4` about running
+``scripts/sim_psych_sleep_study.py``.
+
+
 Loading the dataset
 ~~~~~~~~~~~~~~~~~~~
 
