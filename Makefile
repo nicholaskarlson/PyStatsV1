@@ -46,6 +46,12 @@ ch15-ci:
 	$(PYTHON) -m scripts.ch15_reliability_analysis --datadir $(OUT_SYN) --outdir $(OUT_CH15) --seed $(SEED)
 
 # --- Full demos ---
+
+.PHONY: psych-ch06
+psych-ch06:
+	$(PYTHON) -m scripts.psych_ch6_normal_zscores
+
+
 .PHONY: ch13
 ch13:
 	$(PYTHON) -m scripts.sim_stroop --seed $(SEED) --outdir $(OUT_SYN)
