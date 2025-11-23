@@ -4,7 +4,6 @@
 from __future__ import annotations
 
 import numpy as np
-import pandas as pd
 
 from scripts.sim_psych_ch7_sampling import (
     DEFAULT_SAMPLE_N,
