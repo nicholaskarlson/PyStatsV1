@@ -77,10 +77,10 @@ A **z-score** expresses a raw score in standard deviation units:
 
 .. math::
 
-   z = \\frac{X - \\mu}{\\sigma}
-
+   z = \frac{X - \mu}{\sigma}
 
 When population parameters are unknown (as is typical), we substitute sample estimates.
+
 
 Interpreting z-scores (where average = mean):
 
