@@ -16,6 +16,8 @@ help:
 	@echo "  ch14-ci    - tiny, fast CI smoke for Chapter 14"
 	@echo "  ch15       - full Chapter 15 reliability (sim + analysis + plots)"
 	@echo "  ch15-ci    - tiny, fast CI smoke for Chapter 15"
+	@echo "  psych-ch06 - Track B Chapter 6 z-score lab"
+	@echo "  psych-ch07 - Track B Chapter 7 sampling lab"
 	@echo "  lint       - ruff check"
 	@echo "  lint-fix   - ruff check with fixes"
 	@echo "  test       - pytest"
@@ -50,6 +52,10 @@ ch15-ci:
 .PHONY: psych-ch06
 psych-ch06:
 	$(PYTHON) -m scripts.psych_ch6_normal_zscores
+
+.PHONY: psych-ch07
+psych-ch07:
+	$(PYTHON) -m scripts.sim_psych_ch7_sampling
 
 
 .PHONY: ch13
