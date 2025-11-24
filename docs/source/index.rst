@@ -45,3 +45,4 @@ Welcome to the documentation for **PyStatsV1** – chapter-based applied statist
    psych_ch5_central_variability
    psych_ch6_normal_zscores
    psych_ch7_probability_sampling
+   psych_ch8_hypothesis_testing
