@@ -57,6 +57,10 @@ psych-ch06:
 psych-ch07:
 	$(PYTHON) -m scripts.sim_psych_ch7_sampling
 
+.PHONY: psych-ch08
+psych-ch08:
+	$(PYTHON) -m scripts.psych_ch8_one_sample_test
+
 
 .PHONY: ch13
 ch13:
