@@ -5,7 +5,7 @@
 PyStatsV1 is an open-source organization applying modern software engineering standards to applied statistics.
 Our mission is to help students, instructors, and researchers escape the Reproducibility Crisis by treating statistical analysis not as a scratchpad, but as a transparent, testable, and re-runnable system.
 
-PyStatsV1 = statistics + software engineering for transparent and reproducible research.
+**PyStatsV1 = statistics + software engineering for transparent and reproducible research.**
 
 **Welcome!** Thank you for helping us build a framework for rigorous, reproducible applied statistics.
 
