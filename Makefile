@@ -69,6 +69,10 @@ psych-ch09:
 psych-ch10:
 	python -m scripts.psych_ch10_independent_t
 
+.PHONY: psych-ch11
+psych-ch11:
+	python -m scripts.psych_ch11_paired_t
+
 
 .PHONY: ch13
 ch13:
