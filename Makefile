@@ -81,6 +81,17 @@ psych-ch12:
 psych-ch13:
 	python -m scripts.psych_ch13_two_way_anova
 
+.PHONY: psych-ch14 test-psych-ch14
+
+# Run the Chapter 14 repeated-measures ANOVA lab script
+psych-ch14:
+	python -m scripts.psych_ch14_repeated_measures_anova
+
+# Run the Chapter 14 unit tests only
+test-psych-ch14:
+	pytest tests/test_psych_ch14_repeated_measures_anova.py
+
+
 
 .PHONY: ch13
 ch13:
