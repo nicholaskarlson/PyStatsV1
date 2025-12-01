@@ -54,3 +54,4 @@ Welcome to the documentation for **PyStatsV1** – chapter-based applied statist
    psych_ch14_repeated_measures_anova
    psych_ch14a_pingouin_appendix
    psych_ch15_correlation
+   psych_ch15a_pingouin_appendix
