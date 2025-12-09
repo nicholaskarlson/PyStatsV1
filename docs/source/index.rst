@@ -3,6 +3,21 @@ PyStatsV1 documentation
 
 Welcome to the documentation for **PyStatsV1** – chapter-based applied statistics examples in plain Python, mirroring classical R textbook analyses.
 
+You can install the lightweight helper package directly from PyPI:
+
+.. code-block:: bash
+
+   pip install pystatsv1
+
+For the full chapter-based labs (simulators, scripts, Makefile targets, and tests),
+we recommend cloning the GitHub repository and installing in editable mode:
+
+.. code-block:: bash
+
+   git clone https://github.com/pystatsv1/PyStatsV1.git
+   cd PyStatsV1
+   pip install -e .
+
 .. toctree::
    :maxdepth: 2
    :caption: Track A – Applied Statistics with Python (Regression)
