@@ -1,5 +1,5 @@
 # PyStatsV1 Organization
-**Don't just calculate your results — engineer them.**
+**Don't just calculate your results — engineer them. We treat statistical analysis like production software.**
 
 PyStatsV1 is an open-source organization applying modern software engineering
 standards to applied statistics.  
@@ -19,6 +19,24 @@ A chapter-based applied statistics toolkit in plain Python.
 - **For Researchers:** “Audit-proof” pipelines with version control, tests, and one-command regeneration.
 - **For Students:** Learn statistics using clean Python scripts that mirror textbook chapters.
 - **For Instructors:** Standardized Makefile workflows and CI smoke tests make grading and replication easy.
+
+### 📦 Install from PyPI
+
+Most users can start directly from **PyPI**:
+
+```bash
+pip install pystatsv1
+```
+
+This installs the pystatsv1 helper package used by the chapter labs.
+
+To work with the full chapter-based repository (simulators, scripts, Makefile targets, and tests), clone from GitHub and install in editable mode:
+
+```bash
+git clone https://github.com/pystatsv1/PyStatsV1.git
+cd PyStatsV1
+pip install -e .
+```
 
 ---
 
