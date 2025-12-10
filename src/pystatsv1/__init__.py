@@ -9,6 +9,7 @@ Convenience re-exports:
 """
 
 from importlib.metadata import PackageNotFoundError, version
+from .docs_helper import get_local_docs_path, open_local_docs
 
 from .paths import (  # noqa: F401
     DATA_DIR,
@@ -25,6 +26,8 @@ __all__ = [
     "TRACK_C_OUTPUT_DIR",
     "PROJECT_ROOT",
     "__version__",
+    "get_local_docs_path",
+    "open_local_docs",
 ]
 
 try:
